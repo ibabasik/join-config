@@ -1,0 +1,19 @@
+{
+  "name": "join-config",
+  "version": "1.0.0",
+  "description": "Function for extending config (should be node module) from application parameters and environments variables",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --reporter spec test",
+    "prepublish": "yarn run test"
+  },
+  "author": "ibabasik@yandex.ru",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
