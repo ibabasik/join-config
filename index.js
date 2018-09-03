@@ -24,6 +24,9 @@ module.exports = function (config) {
             if (!isNaN(value)){
                 value = +value;
             }
+	        if (value === 'false' || value === 'true'){
+		        value = (value !== 'false');
+	        }
             _.set(config, key, value);
         } else {
             global.args[arg] = true;
